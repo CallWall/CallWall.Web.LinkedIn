@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CallWall.Web.Core, Version=0.1.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\CallWall.Web.Core.0.1.19.0\lib\net451\CallWall.Web.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Practices.Unity">
       <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.dll</HintPath>
     </Reference>
@@ -119,7 +123,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <PropertyGroup>
-    <PostBuildEvent>XCOPY /E /I /Y /R $(ProjectDir)Content $(SolutionDir)src\CallWall.Web\Content\LinkedIn</PostBuildEvent>
+    <PostBuildEvent>XCOPY /E /I /Y /R $(ProjectDir)Content $(SolutionDir)src\CallWall.WebHost\Content\LinkedIn</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
