@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 
-namespace CallWall.Web.LinkedInProvider
+namespace CallWall.Web.LinkedInProvider.Auth
 {
     public sealed class ResourceScope : IResourceScope
     {

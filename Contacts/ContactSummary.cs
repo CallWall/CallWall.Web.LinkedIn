@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 
-namespace CallWall.Web.LinkedInProvider
+namespace CallWall.Web.LinkedInProvider.Contacts
 {
     public class ContactSummary : IContactSummary
     {
         //TODO copy and paste job here - see google
-       
+
         private readonly string _title;
         private readonly IEnumerable<string> _tags;
         private readonly string _primaryAvatar;
@@ -17,9 +17,6 @@ namespace CallWall.Web.LinkedInProvider
             _tags = tags;
         }
 
-        /// <summary>
-        /// The title description for the contact. Usually their First and Last name.
-        /// </summary>
         public string Title
         {
             get { return _title; }
