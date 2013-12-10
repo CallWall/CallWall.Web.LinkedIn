@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CallWall.Web.LinkedInProvider.Contacts
+namespace CallWall.Web.LinkedInModule.Contacts
 {
     public class ContactSummary : IContactSummary
     {

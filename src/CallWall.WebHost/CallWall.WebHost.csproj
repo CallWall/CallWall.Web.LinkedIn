@@ -44,9 +44,9 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="CallWall.Web.Core, Version=0.1.19.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="CallWall.Web.Core, Version=0.1.22.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\CallWall.Web.Core.0.1.19.0\lib\net451\CallWall.Web.Core.dll</HintPath>
+      <HintPath>..\..\packages\CallWall.Web.Core.0.1.22.0\lib\net451\CallWall.Web.Core.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
@@ -241,7 +241,6 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -279,9 +278,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
+    <Compile Include="Global.asax.cs" />
     <Compile Include="Hubs\ContactsHub.cs" />
     <Compile Include="Logging\ConsoleLogger.cs" />
     <Compile Include="Logging\Log4NetLogger.cs" />
@@ -302,7 +299,7 @@
     <Content Include="Scripts\jquery-2.0.3.min.map" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\ResourceScope.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\AccountConfiguration.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\OAuthAccountListItem.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -330,12 +327,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CallWall.Web.LinkedInProvider\CallWall.Web.LinkedInProvider.csproj">
+    <ProjectReference Include="..\CallWall.Web.LinkedInModule\CallWall.Web.LinkedInModule.csproj">
       <Project>{00269fff-9346-4a9c-bef7-113e311313cc}</Project>
-      <Name>CallWall.Web.LinkedInProvider</Name>
+      <Name>CallWall.Web.LinkedInModule</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

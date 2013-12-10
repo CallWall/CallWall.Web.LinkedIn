@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CallWall.Web.LinkedInProvider.Auth
+namespace CallWall.Web.LinkedInModule.Auth
 {
     public sealed class AccountConfiguration : IAccountConfiguration
     {

@@ -2,7 +2,7 @@
 using CallWall.Web.OAuth2Implementation;
 using Newtonsoft.Json.Linq;
 
-namespace CallWall.Web.LinkedInProvider.Auth
+namespace CallWall.Web.LinkedInModule.Auth
 {
     public class LinkedInAuthentication : OAuth2AuthenticationBase, IAccountAuthentication
     {
